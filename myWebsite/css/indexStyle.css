@@ -1,0 +1,158 @@
+/*adding a Russian looking font*/
+ @font-face {
+     font-family: 'red_octoberregular';
+     src: url('../font/red october/red_october-webfont.woff2') format('woff2'), url('../font/ red october/red_october-webfont.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+/*adding background image to cover the page*/
+ html {
+     background-image: url(../images/background.jpg);
+     background-size: cover;
+     height: 100%;
+}
+ .logo {
+     float: right;
+     width: 150px;
+     height: 200px;
+}
+ h1, h2{
+     font-family: 'red_octoberregular';
+     font-weight: normal;
+     font-style: normal;
+}
+/* colour menu, removes dots, hides elements that don't fit */
+ .navBar, .menu {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: #db0000;
+}
+/*font + menu items are on one horizontal line */
+ .menuItems, .dropdownTanks, .dropdown, .dropdownAerial {
+     float: left;
+     font-family: 'red_octoberregular';
+}
+/*Kleur font */
+ .menuItems a, .dropbtn {
+     display: block;
+     color: #000000;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+/* hover colour */
+ .menuItems a:hover, .dropdown:hover .dropbtn {
+     background-color: #fff200;
+}
+ .dropdown {
+     display: block;
+     text-align: center;
+}
+ .menuItems a {
+     display: block;
+     text-align: center;
+     padding: 14px 16px;
+}
+/*media query for screens with a smaller width than 1080px images take less than half of the screen width, height set to auto to prevent stretching*/
+ @media only screen and (max-width: 1080px){
+     nav.navBar li.right, nav.navBar li {
+        float: none;
+    }
+     .imageSize {
+         width: 49.99999%;
+         margin: 6px 0;
+    }
+     .gallery img, .info img {
+         height: auto;
+    }
+}
+ div.bodyText {
+     background-color: #e8d6a5;
+     text-align: left;
+     font-family: 'red_octoberregular';
+}
+/* css dthat belongs to the gallery */
+ .info {
+     border: 2px solid #db0000;
+     background-color: #e8d6a5;
+}
+ .gallery {
+     border: 2px solid #db0000;
+     background-color: #e8d6a5;
+}
+ .gallery:hover{
+     border: 2px solid #fff200;
+}
+ .gallery img{
+     width: 100%;
+}
+ .center {
+     display: block;
+     margin-right: 150px;
+}
+ .desc, .info {
+     padding-top: 10px;
+     padding-right: 0px;
+     padding-left: 0px;
+     text-align: center;
+     font-family: 'red_octoberregular';
+}
+ .imageSize{
+     padding: 0 5px;
+     float: left;
+     width: 24.99999%;
+}
+ .clearfix {
+     overflow: auto;
+}
+ .fData {
+     width: 8em;
+     float: left;
+     text-align: left;
+     font-family: 'red_octoberregular';
+}
+ img {
+     float: right;
+}
+ .data {
+     float: left;
+     text-align: left;
+     max-width: 12em;
+     min-width: 8em;
+     margin-left: 50px;
+     color:#0066ff;
+     font-family: 'red_octoberregular';
+}
+/*styling table*/
+ table {
+     font-family: 'red_octoberregular';
+     color: #FFFFFF;
+     border-collapse: collapse;
+     width: 100%;
+}
+ td, th {
+     border: 1px solid #dddddd;
+     text-align: left;
+     padding: 8px;
+}
+ table#t1 {
+     background-color: #800000;
+}
+ .scroll {
+     overflow-x:auto;
+}
+ tr:nth-child(even) {
+     background-color: #006600;
+}
+/*media query for screens with a smaller width than 500px*/
+ @media only screen and (max-width: 500px){
+     .info {
+         width: 100%;
+         margin-left: 0px;
+    }
+     .imageSize, .info, iframe {
+         width: 99%;
+    }
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/layout_book1Head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="301dp"
+                android:layout_height="257dp"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:srcCompat="@mipmap/book_image" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Club mars"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView42"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="€ 21,99"
+                android:textColor="@color/colorAccent"
+                android:textSize="40dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/buy_book1"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView42"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="11dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="25dp">
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="38dp"
+                    android:layout_marginVertical="6dp"
+                    android:text="Buy me!"
+                    android:textColor="#fff"
+                    android:textSize="20dp" />
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_book1Head"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="50dp">
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="In ‘Club Mars’ van Rachel Kushner is de 29-jarige Romy Hall onlangs veroordeeld tot tweemaal levenslang plus zes jaar. Ze slijt haar dagen in een maximaal beveiligde vrouwengevangenis in Noord-Californië. Buiten is het San Francisco van haar jeugd en Club Mars, de stripclub waar ze ooit danste voor de kost. En haar zevenjarige zoontje Jackson. Binnen is de nieuwe, absurde realiteit: duizenden vrouwen die hun levensbehoeften bij elkaar proberen te scharrelen, dagelijks geweld door zowel bewakers als gevangenen. Romy ziet de toekomst voor zich uitstrekken in een lange, onverbiddelijk rechte lijn. Totdat ze uit haar sleur wordt gerukt door nieuws vanbuiten, en haar lot naar eigen hand moet proberen te zetten. Een hartverscheurend en onvergetelijk boek, aldus Publishers Weekly."
+                android:textSize="20dp"
+                app:trimLength="100"
+
+                app:trimMode="trimModeLength" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:clickable="false"
+                android:text=""
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="850dp">
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

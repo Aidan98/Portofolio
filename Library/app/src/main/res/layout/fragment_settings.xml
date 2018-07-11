@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="68dp"
+        android:layout_marginStart="18dp"
+        android:text="Welcome to Athenaeum Booksellers, one of Holland's and Amsterdam's largest independent bookstores. Not only do we have a large stock in the literary field, but also in various academic fields, such as (classical and modern) languages, the humanities and the social sciences. About 40% of our stock is self-imported. The Athenaeum Nieuwscentrum offers a wide range of foreign and local newspapers and magazines, plus a curated selection of travel guides and books on design, fashion and lifestyle."
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="334dp"
+        android:layout_height="331dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@mipmap/logo_ab" />
+
+</RelativeLayout>

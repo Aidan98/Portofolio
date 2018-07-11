@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mainProfile"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+
+            <ImageView
+                android:layout_width="109dp"
+                android:layout_height="107dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="42dp"
+                android:background="@mipmap/jesus"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="81dp"
+                android:text="Aidan Omwando"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="112dp"
+                android:text="Student" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="144dp"
+                android:layout_marginTop="130dp"
+                android:text="aidan.omwando@gmail.com" />
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/profileL"
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_below="@+id/mainProfile"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/aboutU"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:text="Profile description"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="40dp"
+                android:ems="10"
+                android:hint="Tell us about yourself"
+                android:inputType="textMultiLine"
+                android:textSize="16dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/savebtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="100dp"
+                android:elevation="10dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="25dp" >
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:textColor="#fff"
+                    android:textSize="30dp"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginVertical="5dp"/>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+<RelativeLayout
+    android:id="@+id/favourite_books"
+    android:layout_below="@+id/profileL"
+    android:layout_marginTop="75dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:text="Favourite books"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="169dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="19dp"
+            app:srcCompat="@mipmap/book_image" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="169dp"
+            android:layout_height="190dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="200dp"
+            app:srcCompat="@mipmap/book_image4" />
+</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
