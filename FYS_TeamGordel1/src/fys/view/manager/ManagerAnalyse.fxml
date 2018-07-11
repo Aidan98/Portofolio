@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1366.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fys.ManagerAnalyseController">
+    <children>
+        <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../images/BG.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: rgba(256,256,256,0.5); -fx-background-radius: 25px;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <BorderPane prefHeight="718.0" prefWidth="1316.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <fx:include fx:id="menubar" source="ManagerMenuBar.fxml" />
+                    </top>
+                    <center>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <JFXComboBox fx:id="jaarComboBox" layoutX="86.0" layoutY="14.0" onAction="#handleJaarComboBoxAction" prefHeight="31.0" prefWidth="210.0" promptText="Selecteer een jaar" style="-fx-text-fill: red; -fx-prompt-text-fill: black; -fx-background-color: rgba(256,256,256,0.5);" />
+                                <JFXComboBox fx:id="maandComboBox" disable="true" layoutX="312.0" layoutY="14.0" onAction="#handleMaandComboBoxAction" prefHeight="31.0" prefWidth="279.0" promptText="Selecteer een maand of laat leeg" style="-fx-text-fill: red; -fx-prompt-text-fill: black; -fx-background-color: rgba(256,256,256,0.5);" visibleRowCount="12" />
+                                <AnchorPane layoutX="95.0" layoutY="93.0" prefHeight="334.0" prefWidth="515.0" style="-fx-background-color: rgb(0, 188, 226, 0.8); -fx-background-radius: 10px;">
+                                    <children>
+                                        <Label fx:id="yearLbl" layoutX="14.0" layoutY="14.0" prefHeight="30.0" text="Jaar:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="jaarLbl" layoutX="65.0" layoutY="14.0" prefHeight="30.0" prefWidth="80.0" textFill="#d61f06">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="monthLbl" layoutX="161.0" layoutY="14.0" prefHeight="30.0" text="Maand:" textFill="#d61f06">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="maandLbl" layoutX="241.0" layoutY="14.0" prefHeight="30.0" prefWidth="260.0" textFill="#d61f06">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="luggageRegisteredLostLbl" layoutX="14.0" layoutY="47.0" prefHeight="30.0" prefWidth="350.0" text="Bagage geregistreerd als verloren:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="geregistreerdVerlorenLbl" layoutX="343.0" layoutY="47.0" prefHeight="30.0" prefWidth="150.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="foundLbl" layoutX="14.0" layoutY="81.0" prefHeight="30.0" prefWidth="350.0" text="Teruggevonden bagage:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="terugGevondLbl" layoutX="346.0" layoutY="81.0" prefHeight="30.0" prefWidth="150.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="averageTimeFoundLbl" layoutX="14.0" layoutY="116.0" prefHeight="30.0" prefWidth="350.0" text="Gemiddelde tijd terugvinden bagage:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="gemiddeldeTijdTerugvindLbl" layoutX="379.0" layoutY="116.0" prefHeight="30.0" prefWidth="150.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="percentageFoundLbl" layoutX="14.0" layoutY="151.0" prefHeight="30.0" prefWidth="350.0" text="Percentage teruggevonden bagage:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="percentageTerugGevondenLbl" layoutX="364.0" layoutY="151.0" prefHeight="30.0" prefWidth="148.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="submittedClaimLbl" layoutX="14.0" layoutY="184.0" prefHeight="30.0" prefWidth="350.0" text="Ingediende schadeclaims:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="ingediendeSchadeclaimsLbl" layoutX="346.0" layoutY="184.0" prefHeight="30.0" prefWidth="150.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="cashedOutClaimLbl" layoutX="14.0" layoutY="217.0" prefHeight="30.0" prefWidth="350.0" text="Uitkering voor schadeclaims:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="uitkeringLbl" layoutX="295.0" layoutY="217.0" prefHeight="30.0" prefWidth="150.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="foundWithOutClaimLbl" layoutX="15.0" layoutY="251.0" prefHeight="30.0" prefWidth="350.0" text="Gevonden bagage zonder claim:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="bagageZonderClaimLbl" layoutX="328.0" layoutY="251.0" prefHeight="30.0" prefWidth="150.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="destroyedluggageLbl" layoutX="14.0" layoutY="286.0" prefHeight="30.0" prefWidth="350.0" text="Vernietigde bagage:" textFill="#d61f06" AnchorPane.leftAnchor="15.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="vernietigdeLbl" layoutX="302.0" layoutY="286.0" prefHeight="30.0" prefWidth="150.0" textFill="#d61f06" AnchorPane.leftAnchor="365.0">
+                                            <font>
+                                                <Font size="20.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <LineChart fx:id="grafiekSchadeVergoeding" layoutX="729.0" layoutY="104.0" prefHeight="460.0" prefWidth="500.0">
+                                    <xAxis>
+                                        <CategoryAxis side="BOTTOM" fx:id="x" />
+                                    </xAxis>
+                                    <yAxis>
+                                        <NumberAxis fx:id="y" side="LEFT" />
+                                    </yAxis>
+                                </LineChart>
+                                <JFXComboBox fx:id="graphComboBox" layoutX="850.0" layoutY="34.0" onAction="#handleGraphComboBoxAction" prefHeight="31.0" prefWidth="280.0" promptText="Selecteer uw gewenste grafiek" style="-fx-text-fill: red; -fx-prompt-text-fill: black; -fx-background-color: rgba(256,256,256,0.5);" />
+                                <JFXButton fx:id="exporteerNaarPdfBtn" buttonType="RAISED" layoutX="205.0" layoutY="492.0" onAction="#handleExpPdfBtnAction" prefHeight="49.0" prefWidth="297.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Exporteer naar PDF" textFill="#d81e05">
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Export.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton fx:id="exporteerNaarCsvBtn" buttonType="RAISED" layoutX="205.0" layoutY="435.0" onAction="#handleCsfBtnAction" prefHeight="49.0" prefWidth="297.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Exporteer naar Excel" textFill="#d81e05">
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Export.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </JFXButton>    
+                            </children>
+                        </AnchorPane>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

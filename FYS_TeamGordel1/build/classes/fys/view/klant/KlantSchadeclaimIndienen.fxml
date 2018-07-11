@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1366.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fys.KlantSchadeclaimIndienenController">
+    <children>
+        <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../images/BG.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: rgba(256,256,256,0.5); -fx-background-radius: 25px;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <BorderPane prefHeight="718.0" prefWidth="1316.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <fx:include fx:id="menubar" source="KlantMenuBar.fxml" />
+                    </top>
+                    <center>
+                        <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                            <children>
+                                <JFXButton fx:id="statusVerlorenBagageBtn" buttonType="RAISED" contentDisplay="TOP" onAction="#handleInzienStatusVerlorenBtnAction" prefHeight="350.0" prefWidth="350.0" ripplerFill="#ffc61e" style="-fx-background-color: white; -fx-background-radius: 250px;" text="Inzien status verloren bagage" textAlignment="CENTER" textFill="#d81e05" wrapText="true">
+                                    <graphic>
+                                        <ImageView fitHeight="190.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Suitcase.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="7.0" right="10.0" top="35.0" />
+                                    </HBox.margin>
+                                </JFXButton>
+                                <AnchorPane prefHeight="418.0" prefWidth="480.0">
+                                    <children>
+                                        <Text fx:id="schadeclaimIndienenLbl" fill="#d70b0b" layoutX="80.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Schadeclaim indienen " textAlignment="CENTER" wrappingWidth="320.0" AnchorPane.leftAnchor="80.0">
+                                            <font>
+                                                <Font name="System Bold" size="24.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="ibanLbl" fill="#d70b0b" layoutX="24.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IBAN nummer " textAlignment="CENTER">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="bedragLbl" fill="#d70b0b" layoutX="10.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vul uw gewenste bedrag in (in euro's)" textAlignment="CENTER">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="idKofferLbl" fill="#d70b0b" layoutX="9.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* Het ID van uw verloren koffer is:" textAlignment="CENTER" AnchorPane.leftAnchor="9.0">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="disclaimerLbl" fill="#d70b0b" layoutX="17.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="* U ziet hier alleen een koffer ID wanneer uw koffer al meer dan 365 dagen verloren is." textAlignment="CENTER" wrappingWidth="454.740234375" AnchorPane.leftAnchor="17.0">
+                                            <font>
+                                                <Font name="System Bold" size="14.0" />
+                                            </font>
+                                        </Text>
+                                        <JFXTextField fx:id="bedragPrmptTxt" focusColor="#00bce2" labelFloat="true" layoutX="5.0" layoutY="207.0" minWidth="400.0" promptText="Schade bedrag" style="-fx-prompt-text-fill: Black; -fx-text-fill: #d81e05;" unFocusColor="#ffc61e" AnchorPane.leftAnchor="5.0">
+                                            <font>
+                                                <Font name="System Bold" size="25.0" />
+                                            </font>
+                                        </JFXTextField>
+                                        <JFXTextField fx:id="ibanPrmptTxt" focusColor="#00bce2" labelFloat="true" layoutX="5.0" layoutY="328.0" minWidth="400.0" promptText="IBAN" style="-fx-prompt-text-fill: Black; -fx-text-fill: #d81e05;" unFocusColor="#ffc61e" AnchorPane.leftAnchor="5.0">
+                                            <font>
+                                                <Font name="System Bold" size="25.0" />
+                                            </font>
+                                        </JFXTextField>
+                                        <JFXButton fx:id="verstuurSchadeclaimBtn" buttonType="RAISED" contentDisplay="RIGHT" layoutX="261.0" layoutY="388.0" onAction="#handleVerstuurSchadeclaimAction" prefHeight="31.0" prefWidth="218.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Vestuur" textFill="#d81e05">
+                                            <graphic>
+                                                <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../images/icon/Sent.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </graphic>
+                                            <font>
+                                                <Font name="System Bold" size="20.0" />
+                                            </font>
+                                            <cursor>
+                                                <Cursor fx:constant="DEFAULT" />
+                                            </cursor>
+                                        </JFXButton>
+                                        <Label fx:id="kofferIDLabel" alignment="TOP_LEFT" layoutX="308.0" layoutY="44.0" prefHeight="28.0" prefWidth="164.0" text="-" textAlignment="CENTER" textFill="#d70b0b" wrapText="true">
+                                            <font>
+                                                <Font name="System Bold" size="18.0" />
+                                            </font>
+                                        </Label>
+                                    </children>
+                                </AnchorPane>
+                                <JFXButton fx:id="statusSchadeclaimBtn" buttonType="RAISED" contentDisplay="TOP" onAction="#handleStatusSchadeclaimAction" prefHeight="350.0" prefWidth="350.0" ripplerFill="#ffc61e" style="-fx-background-color: white; -fx-background-radius: 250px;" text="Status schadeclaim" textAlignment="CENTER" textFill="#d81e05" wrapText="true">
+                                    <graphic>
+                                        <ImageView fitHeight="458.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Info%20Squared.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="35.0" />
+                                    </HBox.margin>
+                                </JFXButton>
+                            </children>
+                            <BorderPane.margin>
+                                <Insets bottom="150.0" left="50.0" right="50.0" top="50.0" />
+                            </BorderPane.margin>
+                        </HBox>
+                    </center>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

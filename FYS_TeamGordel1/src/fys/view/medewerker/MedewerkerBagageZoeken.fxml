@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1366.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fys.MedewerkerBagageZoekenController">
+    <children>
+        <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@../images/BG.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane prefHeight="768.0" prefWidth="1366.0" style="-fx-background-color: rgba(256,256,256,0.5); -fx-background-radius: 25px;" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <BorderPane prefHeight="718.0" prefWidth="1316.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <top>
+                        <fx:include fx:id="menubar" source="MedewerkerMenuBar.fxml" />
+                    </top>
+                    <right>
+                        <AnchorPane BorderPane.alignment="CENTER">
+                            <children>
+                                <Label fx:id="alleKoffers" layoutX="25.0" layoutY="94.0" text="Alle koffers" textFill="#d81e05">
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="zoekenBagage" layoutX="549.0" text="Zoeken Bagage" textFill="#d81e05">
+                                    <font>
+                                        <Font name="System Bold" size="30.0" />
+                                    </font>
+                                </Label>
+                                <JFXComboBox fx:id="kenmerkenComboBox" layoutX="221.0" layoutY="61.0" prefHeight="31.0" prefWidth="200.0" promptText="Kenmerken" style="-fx-text-fill: red; -fx-prompt-text-fill: black; -fx-background-color: rgba(256,256,256,0.5);" />
+                                <JFXTextField fx:id="zoekterm" focusColor="#00bce2" labelFloat="true" layoutX="424.0" layoutY="56.0" maxWidth="201.0" minWidth="250.0" prefHeight="43.0" prefWidth="201.0" promptText="Zoeken" style="-fx-text-fill: #d81e05; -fx-prompt-text-fill: black;" unFocusColor="#ffc61e">
+                                    <font>
+                                        <Font name="System Bold" size="16.0" />
+                                    </font>
+                                </JFXTextField>
+                                <JFXButton fx:id="zoekenBtn" buttonType="RAISED" layoutX="674.0" layoutY="45.0" onAction="#handleZoekenOpAction" prefHeight="49.0" prefWidth="160.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Zoeken" textFill="#d81e05">
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Search.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </JFXButton>
+                                <JFXButton fx:id="laadAlleBagageBtn" buttonType="RAISED" layoutX="839.0" layoutY="45.0" onAction="#handleLaadTabelBtnAction" prefHeight="49.0" prefWidth="270.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Laad alle bagage" textFill="#d81e05">
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Refresh.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </JFXButton>
+                                <Label fx:id="klantLbl" layoutX="900.0" layoutY="147.0" text="verlorenID" textFill="#ffc61e" visible="false" AnchorPane.leftAnchor="900.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <JFXComboBox fx:id="klantCombobox" layoutX="1028.0" layoutY="147.0" prefHeight="31.0" prefWidth="150.0" promptText="Verloren ID" style="-fx-text-fill: red; -fx-prompt-text-fill: black; -fx-background-color: rgba(256,256,256,0.5);" visible="false" />
+                                <JFXButton fx:id="klantZoeken" buttonType="RAISED" contentDisplay="CENTER" layoutX="1191.0" layoutY="129.0" onAction="#handleKlantZoekenAction" prefHeight="35.0" prefWidth="35.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text=" " textFill="#d81e05" visible="false">
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Search.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </JFXButton>
+                                <Label fx:id="labelnrLbl" layoutX="900.0" layoutY="184.0" prefWidth="150.0" text="Labelnummer" textFill="#ffc61e" visible="false" AnchorPane.leftAnchor="900.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="vluchtnummerLbl" layoutX="900.0" layoutY="213.0" prefWidth="150.0" text="Vluchtnummer" textFill="#ffc61e" visible="false" AnchorPane.leftAnchor="900.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="typeLbl" layoutX="900.0" layoutY="242.0" prefWidth="150.0" text="Type" textFill="#ffc61e" visible="false" AnchorPane.leftAnchor="900.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="merkLbl" layoutX="900.0" layoutY="272.0" prefWidth="150.0" text="Merk" textFill="#ffc61e" visible="false" AnchorPane.leftAnchor="900.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="kleurLbl" layoutX="900.0" layoutY="302.0" prefWidth="150.0" text="Kleur" textFill="#ffc61e" visible="false" AnchorPane.leftAnchor="900.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="bijzondereKenmerkenLbl" layoutX="900.0" layoutY="332.0" prefHeight="71.0" prefWidth="150.0" text="Bijzondere Kenmerken" textFill="#ffc61e" visible="false" wrapText="true" AnchorPane.leftAnchor="900.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="klantVluchtnrLbl" layoutX="1055.0" layoutY="184.0" prefHeight="0.0" prefWidth="220.0" textFill="#d81e05" AnchorPane.leftAnchor="1055.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="klantLabelnrLbl" layoutX="1055.0" layoutY="213.0" prefHeight="27.0" prefWidth="220.0" textFill="#d81e05" AnchorPane.leftAnchor="1055.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="klantTypeLbl" layoutX="1055.0" layoutY="242.0" prefHeight="27.0" prefWidth="220.0" textFill="#d81e05" AnchorPane.leftAnchor="1055.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="klantMerkLbl" layoutX="1055.0" layoutY="272.0" prefHeight="27.0" prefWidth="220.0" textFill="#d81e05" AnchorPane.leftAnchor="1055.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="klantKleurLbl" layoutX="1055.0" layoutY="302.0" prefHeight="27.0" prefWidth="220.0" textFill="#d81e05" AnchorPane.leftAnchor="1055.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="klantBijzondereKenmerkenLbl" alignment="TOP_LEFT" layoutX="1055.0" layoutY="338.0" prefHeight="100.0" prefWidth="220.0" textAlignment="CENTER" textFill="#d81e05" wrapText="true" AnchorPane.leftAnchor="1055.0">
+                                    <font>
+                                        <Font name="System Bold" size="21.0" />
+                                    </font>
+                                </Label>
+                                <JFXButton fx:id="matchBtn" buttonType="RAISED" layoutX="1011.0" layoutY="489.0" onAction="#handleMatchAction" prefHeight="49.0" prefWidth="250.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Match maken" textFill="#d81e05">
+                                    <graphic>
+                                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icon/Ok.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <font>
+                                        <Font name="System Bold" size="20.0" />
+                                    </font>
+                                </JFXButton>
+                                <TableView fx:id="tableview" layoutX="25.0" layoutY="133.0" prefHeight="420.0" prefWidth="650.0">
+                                    <columns>
+                                        <TableColumn fx:id="luchthaven" minWidth="0.0" prefWidth="161.0" resizable="false" text="Luchthaven" />
+                                        <TableColumn fx:id="type" prefWidth="108.0" resizable="false" text="Type" />
+                                        <TableColumn fx:id="merk" prefWidth="111.0" resizable="false" text="Merk" />
+                                        <TableColumn fx:id="kleur" prefWidth="121.0" resizable="false" text="Kleur" />
+                                        <TableColumn fx:id="vluchtnummer" prefWidth="153.0" resizable="false" text="Vluchtnummer" />
+                                        <TableColumn fx:id="labelnummer" resizable="false" text="Labelnummer" />
+                                        <TableColumn fx:id="bestemming" prefWidth="152.0" resizable="false" text="Bestemming" />
+                                        <TableColumn fx:id="bijzondereKenmerken" prefWidth="222.0" resizable="false" text="Bijzondere Kenmerken" />
+                                        <TableColumn fx:id="identificatienummer" prefWidth="154.0" resizable="false" text="Identificatienummer" />
+                                    </columns>
+                                </TableView>
+                                <ImageView fx:id="kofferImageView" fitHeight="200.0" fitWidth="200.0" layoutX="688.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/logo.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                    </right>
+                </BorderPane>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

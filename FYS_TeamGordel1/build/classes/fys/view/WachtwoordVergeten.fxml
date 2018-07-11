@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="768.0" maxWidth="1366.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fys.WachtwoordVergetenController">
+    <children>
+        <ImageView pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="@images/BG.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="740.0" layoutY="82.0" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: rgba(256,256,256,0.5); -fx-background-radius: 20px;" AnchorPane.topAnchor="80.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="5.0">
+                    <image>
+                        <Image url="@images/Logo_Corendon_RGB.png" />
+                    </image>
+                </ImageView>
+                <JFXTextField fx:id="emailLbl" focusColor="#00bce2" labelFloat="true" layoutX="82.0" layoutY="355.0" minWidth="400.0" promptText="Email" style="-fx-prompt-text-fill: Black; -fx-text-fill: #d81e05;" unFocusColor="#ffc61e">
+                    <font>
+                        <Font name="System Bold" size="25.0" />
+                    </font>
+                </JFXTextField>
+                <JFXButton fx:id="verstuur" buttonType="RAISED" contentDisplay="RIGHT" layoutX="307.0" layoutY="476.0" onAction="#handleVerstuurBtnAction" prefHeight="31.0" prefWidth="218.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Vestuur" textFill="#d81e05" AnchorPane.rightAnchor="50.0">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icon/Sent.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="terug" buttonType="RAISED" layoutX="57.0" layoutY="476.0" onAction="#handleTerugBtnAction" prefHeight="31.0" prefWidth="218.0" ripplerFill="#ffc61e" style="-fx-background-color: white;" text="Terug" textFill="#d81e05" AnchorPane.leftAnchor="50.0">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/icon/Back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </JFXButton>
+                <Label fx:id="wachtwoordVergeten" layoutX="25.0" layoutY="146.0" prefHeight="159.0" prefWidth="500.0" text="Voer a.u.b. uw email in. U ontvangt een herstel link op uw email." textAlignment="CENTER" textFill="#00bce2" wrapText="true">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="257.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/icon/Lock.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

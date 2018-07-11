@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="1316.0" style="-fx-background-radius: 25px; -fx-background-color: #00000000;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fys.ManagerMenuBarController">
+    <children>
+        <HBox prefHeight="100.0" prefWidth="1316.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/Logo_Corendon_RGB.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                    </HBox.margin>
+                </ImageView>
+                <JFXButton buttonType="RAISED" onAction="#handleHomeBtnAction" prefHeight="60.0" prefWidth="250.0" ripplerFill="#d81e05" style="-fx-background-color: #00bce2; -fx-background-radius: 5px;" text="Home" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icon/Home1.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="10.0" top="20.0" />
+                    </HBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="menubarProfielBtn" buttonType="RAISED" onAction="#handleProfielBtnAction" prefHeight="60.0" prefWidth="250.0" ripplerFill="#d81e05" style="-fx-background-color: #00bce2; -fx-background-radius: 5px;" text="Profiel" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icon/Circled%20User%20Male1.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="10.0" right="10.0" top="20.0" />
+                    </HBox.margin>
+                </JFXButton>
+                <JFXButton fx:id="menubarUitloggenBtn" buttonType="RAISED" contentDisplay="RIGHT" onAction="#handleUitloggenBtnAction" prefHeight="60.0" prefWidth="250.0" ripplerFill="#d81e05" style="-fx-background-color: #00bce2; -fx-background-radius: 5px;" text="Uitloggen" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/icon/Logout%20Rounded1.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets bottom="20.0" left="180.0" right="10.0" top="20.0" />
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
