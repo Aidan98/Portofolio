@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sloterpas" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/lichtkunstwerk"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/slotermer" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/uitzicht" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/xenios" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/vuurwerk" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fransbastiaansestraat" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/voetbal" />
+
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/viewFlipper2">
+
+        <TextView
+            android:id="@+id/imageCount1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="1 / 6"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+        <TextView
+            android:id="@+id/imageCount2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="2 / 6"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+        <TextView
+            android:id="@+id/imageCount3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="3 / 6"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+        <TextView
+            android:id="@+id/imageCount4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="4 / 6"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+        <TextView
+            android:id="@+id/imageCount5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="5 / 6"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+        <TextView
+            android:id="@+id/imageCount6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="6 / 6"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+        <TextView
+            android:id="@+id/imageCount7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="7 / 8"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+        <TextView
+            android:id="@+id/imageCount8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:text="8 / 8"
+            android:gravity="center"
+            android:translationY="395dp"/>
+
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/viewFlipper3">
+
+        <TextView
+            android:id="@+id/caption1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="@string/caption1_nl"
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/caption2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="@string/caption2_nl"
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/caption3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="@string/caption3_nl"
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/caption4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="De oever van de Sloterplas is een nieuw kunstwerk rijker. Een bankje met mozaïek siert de oever tegenover theater De Meervaart.De mozaïek - met een afbeelding van Atlas - viert het veelkleurige Amsterdam met haar 180 nationaliteiten. Het ontwerp is van Rob van Trier. Kunstenaar Martin Cleef heeft de bank gemaakt met hulp van de medewerkers van sociaal werk- en leerbedrijf Pantar."
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/caption5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="Het nieuwe hockeyveld van Xenios is geopend! Nieuw-West-bestuurslid Ronald Mauer en Xenios-voorzitter Titia Frijlink hadden de eer om het lint door te knippen. Met het nieuwe veld kan de hockeyclub op sportpark Sloten een hoop nieuwe leden herbergen."
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/caption6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="Traditiegetrouw wordt Koningsdag om 22.00 uur afgesloten met een spectaculaire vuurwerkshow boven de Sloterplas. Het vuurwerk van het Oranje Comité Amsterdam wordt afgeschoten vanaf pontons in het water en is te zien van alle kanten."
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/caption7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="Traditiegetrouw wordt Koningsdag om 22.00 uur afgesloten met een spectaculaire vuurwerkshow boven de Sloterplas. Het vuurwerk van het Oranje Comité Amsterdam wordt afgeschoten vanaf pontons in het water en is te zien van alle kanten."
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/caption8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA000000"
+            android:text="Traditiegetrouw wordt Koningsdag om 22.00 uur afgesloten met een spectaculaire vuurwerkshow boven de Sloterplas. Het vuurwerk van het Oranje Comité Amsterdam wordt afgeschoten vanaf pontons in het water en is te zien van alle kanten."
+            android:textColor="@android:color/white"
+            android:padding="4dp"
+            android:textSize="16sp"/>
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_gallery_next_nl"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/buttonPrevious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_gallery_previous_nl"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/buttonNext"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:textColor="@android:color/background_light"/>
+
+</RelativeLayout>

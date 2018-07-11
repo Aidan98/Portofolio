@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/group_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@mipmap/ic_action_news"
+            android:title="@string/nav_news_nl" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@android:drawable/ic_menu_report_image"
+            android:title="Photo Gallery" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@android:drawable/ic_menu_help"
+            android:title="Quiz" />
+        <item
+            android:id="@+id/nav_survey"
+            android:icon="@mipmap/ic_action_survey"
+            android:title="Enquête" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@mipmap/ic_action_login"
+            android:title="Mijn Profiel" />
+    </group>
+    <group
+        android:id="@+id/group_info"
+        android:checkableBehavior="single">
+        <item android:title="Contact">
+            <menu>
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@android:drawable/ic_dialog_info"
+                    android:title="Informatie" />
+                <item
+                    android:id="@+id/nav_about"
+                    android:icon="@mipmap/ic_action_about"
+                    android:title="Over ons" />
+
+            </menu>
+        </item>
+    </group>
+    <group
+        android:id="@+id/group_admin"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_admin"
+            android:title="Administrator">
+            <menu>
+                <item
+                    android:id="@+id/nav_admin"
+                    android:icon="@mipmap/ic_action_admin"
+                    android:title="Beheer" />
+
+            </menu>
+        </item>
+    </group>
+
+</menu>

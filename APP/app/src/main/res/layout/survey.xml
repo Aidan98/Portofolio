@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score_text_survey_nl"
+            android:textSize="20sp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Vraag: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:text="1"
+            android:textSize="20sp"
+            android:layout_toEndOf="@+id/score_text" />
+        <TextView
+            android:id="@+id/of_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="van "
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/number" />
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/of_text" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_marginBottom="40dp"
+        android:padding="8dp"
+        android:text="@string/textview_age_nl"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/choice1"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:text="12-18"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/choice2"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="6dp"
+        android:text="18-30"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/choice3"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="6dp"
+        android:text="30-50"
+        android:textColor="#fff"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/choice4"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="6dp"
+        android:text="50+"
+        android:textColor="#fff"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/choice5"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="6dp"
+        android:text=" "
+        android:textColor="#fff"
+        android:visibility="invisible" /><![CDATA[
+
+    android:text="Opslaan"
+        android:textColor="#fff"
+        android:visibility="invisible" />
+
+]]>
+</LinearLayout>

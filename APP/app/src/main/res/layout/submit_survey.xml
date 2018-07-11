@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/TxtSurvey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="11dp"
+        android:text="@string/fragment_survey_title_nl"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/BtnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="90dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/button_save_nl"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <EditText
+            android:id="@+id/opinion"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/TxtSurvey"
+            android:layout_marginTop="46dp"
+            android:ems="10"
+            android:hint="Extra toevoeging"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+</RelativeLayout>

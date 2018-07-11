@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "447877201317",
+    "firebase_url": "https://amsterdam-app.firebaseio.com",
+    "project_id": "amsterdam-app",
+    "storage_bucket": "amsterdam-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:447877201317:android:668464f7f0bf2eb5",
+        "android_client_info": {
+          "package_name": "alex.amsterdamapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "447877201317-hcmau65f7dss1ekmvulmkjnnli29fu3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACftrmoCGdinnP8CtuUTBQm9wS4sM3uNo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

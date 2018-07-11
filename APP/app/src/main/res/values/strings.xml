@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">AmsterdamApp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="success_nl">Succesvol geregistreerd!</string>
+    <string name="success_tr">Başarıyla kayıtlı!</string>
+    <string name="success_en">Successfully registered!</string>
+
+    <string name="action_settings">Instellingen</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Wachtwoord</string>
+    <string name="action_sign_in">Log in of registreet</string>
+    <string name="action_sign_in_short">Log in</string>
+    <string name="error_invalid_password">Het wachtwoord voldoet niet aan de eisen</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    //Nederlands login pagina
+    <string name="login_nl">Inloggen</string>
+    <string name="password_nl">Wachtwoord</string>
+    <string name="username_nl">Email adres</string>
+    <string name="login_title_nl">Mijn Profiel</string>
+    <string name="button_register_nl">Registreer hier</string>
+    <string name="error_incorrect_password_nl">Het wachtwoord is onjuist</string>
+    <string name="error_field_required_nl">Dit veld moet worden ingevuld</string>
+    <string name="error_invalid_email_nl">Dit email adres is onjuist</string>
+    <string name="dialog_nl">De inloggegevens zijn onjuist.</string>
+
+    //Nederlands header main
+    <string name="subtitle_nl">Het laatste nieuws over Amsterdam Nieuw-West</string>
+    <string name="title_nl">Gemeente Nieuw-West</string>
+    <string name="nav_news_nl">Nieuws</string>
+
+    /Nederlands fragment news
+    <string name="fragment_news_title_nl">Nieuwsbron</string>
+    <string name="text_title_nl">Selecteer een nieuwsbron</string>
+
+    /Nederlands fragment news parool
+    <string name="alert_loading_nl">Laden</string>
+    <string name="button_next_nl">Volgende pagina</string>
+    <string name="button_previous_nl">Vorige pagina</string>
+
+    //Nederlands quiz menu
+    <string name="fragment_quizmenu_title_nl">Quizzen</string>
+    <string name="button_quiz_nl">Quiz</string>
+    <string name="button_topoquiz_nl">Topo Quiz</string>
+    <string name="text_quiz_nl">Selecteer een Quiz</string>
+    <string name="text_topoquiz_question_nl">Welke straat is dit?</string>
+
+    //Nederlands quiz
+    <string name="fragment_quiz_title_nl">Quiz</string>
+    <string name="textview_question_nl">Druk op een knop om verder te gaan</string>
+    <string name="score_text_nl">Score</string>
+    <string name="button_choice1_nl">Keuze 1</string>
+    <string name="button_choice2_nl">Keuze 2</string>
+    <string name="button_choice3_nl">Keuze 3</string>
+
+    //Nederlands fragment survey
+    <string name="fragment_survey_title_nl">Enquête</string>
+    <string name="textview_age_nl">Hoe oud bent u?</string>
+    <string name="score_text_survey_nl">Score</string>
+    <string name="button_save_nl">Opslaan</string>
+    <string name="extra_nl">Extra toevoeging</string>
+
+    //Nederlands fragment about
+    <string name="fragment_about_title_nl">Over ons</string>
+    <string name="text_about_nl">Een stukje tekst over ons en wat wij hebben gemaakt</string>
+
+    //Nederlands fragment register
+    <string name="fragment_register_title_nl">Registreren</string>
+    <string name="text_email_nl">Email adres</string>
+    <string name="text_password_nl">Wachtwoord</string>
+    <string name="text_name_nl">Voornaam</string>
+    <string name="text_zipcode_nl">Postcode</string>
+    <string name="button_new_user_nl">Registreren</string>
+    <string name="used_email">Email is in gebruik</string>
+
+    //Nederlands fragment info
+    <string name="fragment_info_title_nl">Informatie</string>
+    <string name="text_info_nl">Stadsdeel Nieuw-West is en blijft de komende jaren in ontwikkeling. Op fysiek gebied staat er, na jaren van rust, weer veel te gebeuren.\n\n De stad heeft bijvoorbeeld 40 miljoen beschikbaar gesteld voor een opknapbeurt van de openbare ruimte (in geselecteerde gebieden). Nieuw-West is hier een van. Een vereiste is echter dat bewoners zeggenschap krijgen in hoe deze opknapbeurt er uit moet komen te zien. Nu gebeurd dat aan de hand van inspraakdagen. De ervaring is echter dat hier weinig mensen op af komen.
+
+\n\nVoor deze probleemstelling dachten wij dat een mobiele applicatie een uitkomst zou kunnen bieden. De applicatie bestaat uit een aantal onderdelen. Zo blijft men op de hoogte van alle gebeurtenissen rondom Amsterdam Nieuw-West met de gratis nieuwsartikelen. Dit nieuws beperkt zich tot Nieuw-West. De nieuwsartikelen worden rechtstreeks vergaard van de website van Het Parool.
+
+\n\nOm de gebruikers meer bewust te maken van hun omgeving en de veranderingen die zij voort kunnen brengen, hebben wij een enquête gemaakt. Er worden open vragen gesteld, zoals in welk deel van de stad zij een vernieuwing willen zien. Deze informatie wordt opgeslagen in onze database. Daarna kan deze informatie worden verstuurd naar de gemeente van Amsterdam. Met deze informatie krijgen zij een inzicht in wat de inwoners willen veranderen.
+</string>
+
+    //Nederlands fragment gallery
+    <string name="fragment_gallery_title_nl">Fotogalerij</string>
+    <string name="button_gallery_next_nl">Volgende</string>
+    <string name="button_gallery_previous_nl">Vorige</string>
+    <string name="caption1_nl">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption2_nl">Het lichtkunstwerk 178 Bottles, 1 Message straalt voortaan haar liefde uit op het Orlyplein bij Station Sloterdijk. Het was voor het eerst te zien tijdens het Amsterdam Light Festival in 2014-2015 en heeft nu een definitief podium gekregen in Amsterdam Nieuw-West.</string>
+    <string name="caption3_nl">Dit is een foto van Slotermeer. Slotermeer is een wijk in de Westelijke Tuinsteden in Amsterdam. De naam van Slotermeer is ontleend aan het Slootermeer dat vroeger in deze omgeving lag.</string>
+    <string name="caption4_nl">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption5_nl">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption6_nl">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption7_nl">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption8_nl">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption9_nl">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+
+    //Engels login pagina
+    <string name="login_en">Sign In</string>
+    <string name="logging_en">Logging in</string>
+    <string name="username_en">Username</string>
+    <string name="password_en">Password</string>
+    <string name="login_title_en">My Profile</string>
+    <string name="button_register_en">Register here</string>
+    <string name="error_incorrect_password_en">The password is incorrect</string>
+    <string name="error_field_required_en">This field must be filled in</string>
+    <string name="error_invalid_email_en">This email address is incorrect</string>
+    <string name="dialog_en">The login details are incorrect.</string>
+
+    //Engels header main
+    <string name="title_en">Community Nieuw-West</string>
+    <string name="subtitle_en">The latest news about Amsterdam New West</string>
+
+    <string name="nav_news_en">News</string>
+
+    /Engels fragment news
+    <string name="fragment_news_title_en">News source</string>
+    <string name="text_title_en">Select a news source</string>
+
+    /Engels fragment news parool
+    <string name="alert_loading_en">Loading</string>
+    <string name="button_next_en">Next page</string>
+    <string name="button_previous_en">Previous page</string>
+
+    //Engels quiz
+    <string name="fragment_quiz_title_en">Quiz</string>
+    <string name="textview_question_en">Press a button to continue</string>
+    <string name="score_text_en">Score</string>
+    <string name="button_choice1_en">Choice 1</string>
+    <string name="button_choice2_en">Choice 2</string>
+    <string name="button_choice3_en">Choice 3</string>
+
+    //Engels quiz menu
+    <string name="fragment_quizmenu_title_en">Quizzes</string>
+    <string name="button_quiz_en">Quiz</string>
+    <string name="button_topoquiz_en">Topo Quiz</string>
+    <string name="text_quiz_en">Select a Quiz</string>
+    <string name="text_topoquiz_question_en">Which street is this?</string>
+
+    //Engels fragment register
+    <string name="fragment_register_title_en">Register</string>
+    <string name="text_email_en">Email address</string>
+    <string name="text_password_en">Password</string>
+    <string name="text_name_en">Firstname</string>
+    <string name="text_zipcode_en">Zipcode</string>
+    <string name="button_new_user_en">Register</string>
+    <string name="used_email_en">Email is already used</string>
+
+    //Engels fragment survey
+    <string name="fragment_survey_title_en">Survey</string>
+    <string name="textview_age_en">How old are you?</string>
+    <string name="score_text_survey_en">Score</string>
+    <string name="button_save_en">Save</string>
+    <string name="extra_en">Additional information</string>
+
+    //Engels fragment about
+    <string name="fragment_about_title_en">About</string>
+    <string name="text_about_en">A piece of text about us and what we have made</string>
+
+    //Engels fragment info
+    <string name="fragment_info_title_en">Information</string>
+    <string name="text_info_en">New-West district is and will continue in the coming years. In the physical area, after years of rest, much is happening again.\n\n For example, the city has made available 40 million for a public space refurbishment (in selected areas). New West is one of these. However, it is a requirement that residents get control of how this turnaround should come true. Now its happening on the basis of days of consultation. However, the experience is that few people get here.
+
+\n\nFor this problem statement, we thought that a mobile application could provide an outcome. The application consists of a number of components. This will keep you informed of all events around Amsterdam New West with the free news articles. This news is limited to New West. The news articles are gathered directly from The Parools website.
+
+\n\nTo make the users more aware of their environment and the changes they can bring, weve made a survey. There are open questions, such as what part of the city they want to see a renewal. This information is stored in our database. Then this information can be sent to the municipality of Amsterdam. With this information, they get an insight into what the residents want to change.</string>
+
+    //Engels fragment gallery
+    <string name="fragment_gallery_title_en">Photo Gallery</string>
+    <string name="button_gallery_next_en">Next</string>
+    <string name="button_gallery_previous_en">previous</string>
+    <string name="caption1_en">This is a picture of Sloterplas. Sloterplas is located in the heart of Amsterdam Nieuw-West.</string>
+    <string name="caption2_en">The light artwork 178 Bottles, 1 Message is now radiating her love at Orlyplein at Sloterdijk Station. It was first seen during the Amsterdam Light Festival in 2014-2015 and has now been relocated to Amsterdam Nieuw-West.</string>
+    <string name="caption3_en">This is a picture of Slotermeer. Slotermeer is a district in Amsterdam. The name of Slotermeer is derived from the Slootermeer that used to be in this area.</string>
+    <string name="caption4_en">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption5_en">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption6_en">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption7_en">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption8_en">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption9_en">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+
+    //Turks login
+    <string name="username_tr">Kullanıcı adı</string>
+    <string name="logging_tr">Giriş</string>
+    <string name="login_tr">Oturum aç</string>
+    <string name="password_tr">Parola</string>
+    <string name="login_title_tr">Benim Profilim</string>
+    <string name="button_register_tr">Kayıt</string>
+    <string name="error_incorrect_password_tr">Şifre yanlışt</string>
+    <string name="error_field_required_tr">Bu alan doldurulmalı</string>
+    <string name="error_invalid_email_tr">Bu e-posta adresi yanlış</string>
+    <string name="dialog_tr">Giriş bilgileri yanlış.</string>
+
+    //Turks header main
+    <string name="title_tr">Topluluk Nieuw-West</string>
+    <string name="subtitle_tr">Hakkında en yeni haberler Amsterdam New West</string>
+
+    /Turks fragment news
+    <string name="fragment_news_title_tr">Haber kaynağı</string>
+    <string name="text_title_tr">Bir haber kaynağı seçin</string>
+    <string name="nav_news_tr">Haber</string>
+
+    //Engels fragment register
+    <string name="fragment_register_title_tr">Kayıt olmak</string>
+    <string name="text_email_tr">E-posta adresi</string>
+    <string name="text_password_tr">Parola</string>
+    <string name="text_name_tr">İsim</string>
+    <string name="text_zipcode_tr">Posta kodu</string>
+    <string name="button_new_user_tr">Kayıt olmak</string>
+    <string name="used_email_tr">E-posta kullanılır</string>
+
+    /Turks fragment news parool
+    <string name="alert_loading_tr">Yükleniyor</string>
+    <string name="button_next_tr">Sonraki Sayfa</string>
+    <string name="button_previous_tr">Önceki sayfa</string>
+
+    //Turks quiz
+    <string name="fragment_quiz_title_tr">Bilgi Yarışması</string>
+    <string name="textview_question_tr">Devam etmek için herhangi bir tuşa basın</string>
+    <string name="score_text_tr">Skorlar</string>
+    <string name="button_choice1_tr">seçim 1</string>
+    <string name="button_choice2_tr">seçim 2</string>
+    <string name="button_choice3_tr">seçim 3</string>
+
+    //Turks quiz menu
+    <string name="fragment_quizmenu_title_tr">Sınavlar</string>
+    <string name="button_quiz_tr">Bilgi Yarışması</string>
+    <string name="button_topoquiz_tr">Topo Bilgi Yarışması</string>
+    <string name="text_quiz_tr">Bir sınav seçin</string>
+    <string name="text_topoquiz_question_tr">Bu hangi sokakta mı?</string>
+
+    //Turks fragment survey
+    <string name="fragment_survey_title_tr">Anket</string>
+    <string name="textview_age_tr">Kaç yaşındasınız?</string>
+    <string name="score_text_survey_tr">Skorlar</string>
+    <string name="button_save_tr">mağaza</string>
+    <string name="extra_tr">Ekstra bir ek</string>
+
+    //Turks fragment about
+    <string name="fragment_about_title_tr">Hakkımızda</string>
+    <string name="text_about_tr">Bir hakkımızda metnin parçası ve ne var</string>
+
+    //Turks fragment info
+    <string name="fragment_info_title_tr">Bilgi</string>
+    <string name="text_info_tr">Nieuw-Batı ve gelişiminde önümüzdeki yıllarda devam edecektir. Fiziksel olarak orada, yıllar süren huzurdan sonra, bir sürü.\n\n Yapılması gereken n Şehir mevcut Örnek (seçili alanlarda) kamusal alanlarda 40 milyon yenileme yaptı. Yeni Batı bunlardan biridir. Ancak sakinleri söz sahibi bir gereklilik nasıl bu revizyon görmek için dışarı gelmelidir. Şimdi sıra katılım günlerde temelinde oldu. Burada deneyim az insan kurtulmak olmasıdır.
+
+\n\nBu sorun, bir mobil bir çözüm düşündüm. uygulama birkaç parçadan oluşmaktadır. Böylece serbest haber makaleleriyle Amsterdam Nieuw-West çevresindeki tüm gelişmelerden tutar. Bu haber Yeni Batı ile sınırlıdır. haber makaleleri Het Paroolda doğrudan web sitesinden toplanmaktadır.
+
+\n\nBu çevrelerini kullanıcılarının daha bilinçli olmaları ve onlar üretebilir değişirse, bir anket yaptı. Böyle bir yenilenmesini görmek kent istiyoruz parçası olarak açık sorular vardır. Bu bilgiler bizim veritabanında saklanır. Sonra bu bilgiler Amsterdam belediyeye gönderilebilir. Bu bilgilerle, ne insanların içine bir fikir değiştirmek zorunda.</string>
+
+    //Turks fragment gallery
+    <string name="fragment_gallery_title_tr">Fotoğraf Galerisi</string>
+    <string name="button_gallery_next_tr">Sonraki</string>
+    <string name="button_gallery_previous_tr">önceki</string>
+    <string name="caption1_tr">Bu bir resim veya Sloterplas olduğunu. Sloterplas Amsterdam Nieuw-West bölgesinin kalbinde yer almaktadır..</string>
+    <string name="caption2_tr">Işık sanatı 178 şişeler, bundan 1 İleti Sloterdijk İstasyonunda Orlyplein üzerinde aşkını yayar. İlk 2014-2015 Amsterdam Işık Festivali nde görülen ve Amsterdam Nieuw-West nihai aşamaya verildi.</string>
+    <string name="caption3_tr">Bu Slotermeer resmidir. Slotermeer Amsterdam batı banliyölerinde bir mahalle. Slotermeer adı, bu ortamda kullanılan Slootermeer türetilir.</string>
+    <string name="caption4_tr">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption5_tr">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption6_tr">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption7_tr">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption8_tr">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+    <string name="caption9_tr">Dit is een foto van Sloterpas. Sloterplas ligt in het hart van Amsterdam Nieuw-West.</string>
+
+</resources>
