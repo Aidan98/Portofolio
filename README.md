@@ -1,7 +1,7 @@
 # Stage
-FYS_TeamGordel1 is een java applicatie (gemaakt voor windows en mac groepsproject ICTBack-end).
-first_website is de eerste website die ooit gemaakt heb, ik heb HTML en een beetje CSS gebruikte bij deze website (Front-End).
-APP is een android applicatie (groepsproject ICT Back-end).
-Library is een android applicatie (individeel project CMD Back-end).
-myWebsite is een website gemaakt met HTML en CSS (voor het vak Internetstandaarden Front-end).
-eindopdrachti is een web spel gemaakt met html, css en javascript (voor het vak Inleing Programmeren Front-End).
+FYS_TeamGordel1 is a java application (made for windows and mac group project ICT Back-endd).
+APP is a community application for Amsterdam Nieuw-West made for android (group project ICT Back-end).
+Library is a community app for the people who shop at Athenaeum Boekhandel (android app individual project CMD Back-end).
+myWebsite is a website made for communist enthousiasts ( Front-end).
+eindopdracht is a web game where you have to dodge enemy dragons.
+Link to the website I build for the company Ledlightened: https://www.ledlightened.com/
